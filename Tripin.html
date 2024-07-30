@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/landingpage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Tripin
+        </title>
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+    <link href="./Tripin_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link rel="stylesheet" href="./Tripin_files/landing.css"></head>
+    <body>
+        <script src="./Tripin_files/bootstrap.bundle.min.js.download" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <nav>
+         <div><a class="active" href="http://127.0.0.1:5500/landingpage.html#">Tripin</a></div>
+         <div>
+         <a class="normal" href="http://127.0.0.1:5500/landingpage.html#">Home</a>
+         <a class="normal" href="http://127.0.0.1:5500/landingpage.html#">About</a>
+         <a class="normal" href="http://127.0.0.1:5500/landingpage.html#">Contact</a>
+         <a class="normal" href="http://127.0.0.1:5500/landingpage.html#">Login</a>
+         </div>
+        </nav>
+        <div class="heading">
+            <h3>Plan your Vacation with us</h3>
+             <div class="container">
+                <button id="btn"> Join us</button>
+             </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+              <img src="./Tripin_files/132 (3).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ubud: Gorilla Face Quad Bike, Jungle Swing, Waterfall &amp; Meal</h5>
+                <p class="card-text">4 days</p>
+                <a href="http://127.0.0.1:5500/landingpage.html#" class="btn btn-secondary">Plan</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Tripin_files/132 (2).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lovina/Bali: Watching dolphin, Swimming &amp; Snorkeling tickets</h5>
+                <p class="card-text">3 days</p>
+                <a href="http://127.0.0.1:5500/landingpage.html#" class="btn btn-secondary">Plan</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Tripin_files/132 (1).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bali: Uluwatu Kecak and Fire Dance Show Entry Ticket</h5>
+                <p class="card-text">2 days</p>
+                <a href="http://127.0.0.1:5500/landingpage.html#" class="btn btn-secondary">Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img src="./Tripin_files/132.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yogyakarta: 3-Day Bromo &amp; Ijen Volcano Trip with Lodging</h5>
+                <p class="card-text">3 days</p>
+                <a href="http://127.0.0.1:5500/landingpage.html#" class="btn btn-secondary">Plan</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Tripin_files/Bali_Zoo_Elephants_LR.1.jpg" style="width: 338.7px ;height:223.6px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Elephant Care Experience with Mud Bath at Bali Zoo</h5>
+                <p class="card-text">3 days</p>
+                <a href="http://127.0.0.1:5500/landingpage.html#" class="btn btn-secondary">Plan</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Tripin_files/132 (1).webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bali: Uluwatu Kecak and Fire Dance Show Entry Ticket</h5>
+                <p class="card-text">2 days</p>
+                <a href="http://127.0.0.1:5500/landingpage.html#" class="btn btn-secondary">Plan</a>
+              </div>
+            </div>
+          </div>
+          <div><a href="http://127.0.0.1:5500/landingpage.html#" class="para">see more</a></div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

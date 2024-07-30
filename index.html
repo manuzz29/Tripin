@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tripin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="landing.css">
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <!-- FirebaseUI -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+</head>
+<body>
+    <nav>
+        <div><a class="active" href="#">Tripin</a></div>
+        <div>
+            <a class="normal" href="#home">Home</a>
+            <a class="normal" href="#abc">About</a>
+            <a class="normal" href="#123">Contact</a>
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+    </nav>
+    <div class="heading" id="home">
+        <h3>Plan your Vacation with us</h3>
+        <div class="container">
+            <button id="btn">Join us</button>
+        </div>
+    </div>
+    <div id="firebaseui-auth-container" style="display:none;"></div>
+    <div class="card-main">
+        <div class="card-deck">
+            <div class="card">
+                <img src="132 (3).webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ubud: Gorilla Face Quad Bike, Jungle Swing, Waterfall & Meal</h5>
+                    <p class="card-text">4 days</p>
+                    <a href="#" class="btn btn-secondary">Plan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="132 (2).webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lovina/Bali: Watching dolphin, Swimming & Snorkeling tickets</h5>
+                    <p class="card-text">3 days</p>
+                    <a href="#" class="btn btn-secondary">Plan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="132 (1).webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bali: Uluwatu Kecak and Fire Dance Show Entry Ticket</h5>
+                    <p class="card-text">2 days</p>
+                    <a href="#" class="btn btn-secondary">Plan</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="132.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Yogyakarta: 3-Day Bromo & Ijen Volcano Trip with Lodging</h5>
+                    <p class="card-text">3 days</p>
+                    <a href="#" class="btn btn-secondary">Plan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Bali_Zoo_Elephants_LR.1.jpg" style="width: 338.7px; height: 223.6px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Elephant Care Experience with Mud Bath at Bali Zoo</h5>
+                    <p class="card-text">3 days</p>
+                    <a href="#" class="btn btn-secondary">Plan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="132 (1).webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bali: Uluwatu Kecak and Fire Dance Show Entry Ticket</h5>
+                    <p class="card-text">2 days</p>
+                    <a href="#" class="btn btn-secondary">Plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><a href="#" class="para">see more</a></div>
+    <div class="about" id="abc">
+        <h2>About</h2>
+        <div class="about-txt">
+            <p>Welcome to Tripin, your ultimate destination for crafting unforgettable Bali itineraries.
+                At Tripin, we understand that planning the perfect trip can be daunting, especially when exploring the enchanting island of Bali.
+                That's why we're here to simplify your travel experience. Whether you're seeking a serene beach retreat, an adventurous jungle expedition, 
+                or a cultural immersion into Bali's vibrant traditions, Tripin offers meticulously curated itineraries
+                to suit every traveler's preferences. Our expertly crafted plans combine must-see attractions, hidden gems, and local insights to ensure
+                you make the most of your time in this tropical paradise. Let Tripin be your guide as you embark on a journey of discovery and create memories to last a lifetime.</p>
+        </div>
+    </div>
+    <div class="contact" id="123">
+        <h2>Contact</h2>
+        <div id="ship"></div>
+        <div class="contact-txt">
+            <a>manasvis2904@gmail.com</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="landingpage.js"></script> 
+</body>
+</html>

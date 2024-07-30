@@ -1,0 +1,144 @@
+body{
+    background-image: url(pexels-nick-wehrli-3393450.jpg);
+    background-size: cover;    
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 57rem;
+    margin-top: 17px;
+}
+ .active{
+    color: aliceblue;
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 15px;
+ }
+ .normal{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 22px;
+    margin: 15px;   
+}
+.normal:hover{
+    text-decoration:wavy;
+    color:antiquewhite;
+}
+.login-btn{
+    font-size: 19px;
+    border:none;
+    background: transparent;
+    border:2px solid #ffffff;
+    outline: none;
+    color:#ffffff;
+    border-radius: 7px;
+    margin-left: 15px;
+}
+.login-btn:hover{
+    background-color: antiquewhite;
+    margin-left: 15px;
+    border-radius: 7px;
+    color:#185861;
+}
+h3{
+    font-family:Impact;
+    text-align: center;
+    color:white;
+    font-weight: 50;
+    margin: 80px;
+    margin-bottom: 85px;
+    font-size: 65px;
+}
+.container{
+    text-align: center;
+    margin:none;
+}
+#btn{
+    border-radius: 8px;
+    font-size: 19px;
+    background-color:white;
+    color:#185861;
+    margin: none;
+}
+.card-deck{
+    display:flex;
+    justify-content:space-around;
+    margin: 30px;
+}
+.card-main{
+    backdrop-filter: blur(3px);
+    border-radius: 50px;
+    width:1400px;
+    text-align: center;
+    margin-left: 55px;
+
+}
+.card{
+   width: 340px;
+   height: 390px;
+}
+.para{
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+.about{
+    background-color:#185861;
+    height: 500px;
+    width: 1520px;
+}
+.about h2{
+    font-size: 65px;
+    color:blanchedalmond;
+    text-align:center;
+    margin-top: 55px;
+    padding-top: 35px;
+    margin-right: 35px;
+    font-family: Impact;
+}
+.about-txt p{
+    font-size: 20px;
+    width:1350px;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+    margin-top: 55px;
+    padding-left: 105px;
+}   
+.contact{
+    background-image: url(contact4.png);
+    width: 1520px;
+    height: 370px;
+    background-size: cover;
+}
+#ship{
+    background-image: url(ship1.png);
+    height: 221px;
+    width: 446px;
+    background-size: cover;
+    border: none;
+    margin-left:px;
+
+}
+.contact h2{ 
+    font-size: 65px;
+    color:#185861;
+    font-family: Impact;
+    text-align: center;
+    padding-top: 35px;
+    margin-right: 35px;
+    font-family: Impact; 
+}
+.contact-txt{
+    text-align:center;
+    padding-top: -5px;
+    padding-right: 35px;
+}
+
+    
